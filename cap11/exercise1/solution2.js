@@ -9,7 +9,7 @@ const array3 = ["a", "c", "d", "gh"] // 5
 
 const myFunc = (arrayOfStrings) => {
   if (arrayOfStrings.length < 2) return arrayOfStrings[0].length
-  return arrayOfStrings[0].length + myFunc(arrayOfStrings.slice(1, arrayOfStrings.length), arrayOfStrings[0].length)
+  return arrayOfStrings[0].length + myFunc(arrayOfStrings.slice(1, arrayOfStrings.length))
 }
 
 console.log(myFunc(array1))
